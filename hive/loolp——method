@@ -1,0 +1,7 @@
+USER_PERMISSIONS = {
+    "user1@xxx.com": ["g10", "g19", "g18"],  # 用户1的权限
+    "user2@xxx.com": ["g10", "g20"],         # 用户2的权限
+    "user3@xxx.com": ["g18", "g21"]        
+}
+for user_email, game_codes in USER_PERMISSIONS.items():
+    print(f"用户{user_email}无有效预警表，{game_codes}")

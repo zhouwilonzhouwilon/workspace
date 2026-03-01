@@ -1,0 +1,9 @@
+from pyhive import hive
+
+host = 'localhost' # Hive服务器地址
+port = 10000 # Hive服务器端口号
+username = 'root' # Hive用户名
+password = 'dfa' # Hive密码
+database = 'zhouhaolong' # Hive数据库名
+
+conn = hive.Connection(host=host, port=port, username=username, password=password, database=database)
