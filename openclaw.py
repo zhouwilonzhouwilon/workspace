@@ -11,9 +11,21 @@ event_handler = lark.EventDispatcherHandler.builder("", "") \
     .register_p1_customized_event("out_approval", do_message_event) \
     .build()
 def main():
-    cli = lark.ws.Client("cli_a93f3c9bd8b8dbcd", "YoK2B6MhGBFDjzO9DIB05og2HSTHU606Q",
+    cli = lark.ws.Client("cli_a93f3c9bd8b8dbcd", "oK2B6MhGBFDjzO9DIB05og2HSTHU606Q",
                          event_handler=event_handler,
                          log_level=lark.LogLevel.DEBUG)
     cli.start()
 if __name__ == "__main__":
     main()
+
+
+# from lark_oapi import Config, Client
+# APP_ID="cli_a93f3c9bd8b8dbcd"
+# APP_SECRET = "YoK2B6MhGBFDjzO9DIB05og2HSTHU606Q"
+
+# # 如果你是「企业内部应用」（90%的场景）
+# config = Config.new_internal_app_config(APP_ID.strip(), APP_SECRET.strip())
+# # 如果你是「第三方应用」（需绑定应用商店）
+# # config = Config.new_app_config(APP_ID.strip(), APP_SECRET.strip())
+
+# client = Client(config)
